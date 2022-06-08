@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body class="container">
+    <main>
+        List of User
+        <ul>
+            <% users.forEach(function(item) { %>
+                <li>
+                    <span>
+                        <%= item.getId() %>
+                    </span>
+                    <span>
+                        <%= item.getName() %>
+                    </span>
+                </li>
+                <% }); %>
+        </ul>
+    </main>
+</body>
+
+</html>
